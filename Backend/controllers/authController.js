@@ -45,8 +45,8 @@ const login = async (req, res) => {
     // Send token in cookie
     res.cookie("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "Strict",
+      secure: true,       // must be true for HTTPS
+      sameSite: "None",   // ✅ required for cross-site cookies
     });
 
     // Send response once
@@ -78,3 +78,4 @@ const getUser = async (req, res) => {
 };
 
 module.exports = { register, login, logout, getUser };
+
