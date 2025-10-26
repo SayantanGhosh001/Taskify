@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { registerUser } from "../api/authApi";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import Navbar from "../components/Navbar";
@@ -67,3 +67,4 @@ const Register = () => {
 };
 
 export default Register;
+
