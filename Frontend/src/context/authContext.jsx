@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUser = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/auth/me", {
+      const res = await axios.get("https://taskify-gd8g.onrender.com/api/auth/me", {
         withCredentials: true,
       });
       setUser(res.data);
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://taskify-gd8g.onrender.com/api/auth/login",
         { email, password },
         { withCredentials: true }
       );
@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await axios.post("http://localhost:8000/api/auth/logout", {}, { withCredentials: true });
+      await axios.post("https://taskify-gd8g.onrender.com/api/auth/logout", {}, { withCredentials: true });
       setUser(null);
       navigate("/login");
     } catch (error) {
@@ -60,3 +60,4 @@ export const AuthProvider = ({ children }) => {
 };
 
 export const useAuth = () => useContext(AuthContext);
+
