@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext";
 
 const PublicRoute = () => {
   const { user } = useAuth();
@@ -8,3 +8,4 @@ const PublicRoute = () => {
 };
 
 export default PublicRoute;
+
