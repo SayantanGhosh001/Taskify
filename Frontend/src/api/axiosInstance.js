@@ -1,10 +1,11 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL, // dynamic URL
+  baseURL: https://taskify-gd8g.onrender.com/api, // dynamic URL
   withCredentials: true, // send cookies
 });
 
 export default API;
+
 
 
