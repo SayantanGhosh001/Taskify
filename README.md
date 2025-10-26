@@ -32,8 +32,6 @@ It allows users to **register, log in, and manage their daily tasks efficiently*
 
 ---
 
----
-
 ## ⚡ Tech Stack
 
 **Frontend:** React, Vite, Axios, Tailwind CSS  
