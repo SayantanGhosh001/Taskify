@@ -54,7 +54,7 @@ JWT_SECRET=your_secret_key
 CORS_ORIGIN=http://localhost:5173
 ```
 ### Frontend `.env`
+```
 VITE_API_BASE_URL=http://localhost:8000/api
-
-## 🏗️ Project Structure
+```
 
